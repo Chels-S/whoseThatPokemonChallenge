@@ -30,11 +30,76 @@
 
 .pokeImg {
   width: 500px;
+  animation: filter 10s finite;
+	animation-name: pokemon;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 11s; 
+
 }
 
 .pokeName {
   font-family: 'Press Start 2P', cursive;
   text-transform: uppercase;
   margin-top: -50px;
+  animation: opacity 10s finite;
+	animation-name: pokeName;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 11s; 
 }
 
+@keyframes pokemon {
+	0% {
+		filter:brightness(0%)
+	}
+  30%{
+    filter: brightness(0%)
+  }
+  50%{
+    filter: brightness(0%)
+  }
+  75%{
+    filter:brightness(0%)
+  }
+  90%{
+    filter:brightness(0%)
+  }
+  95%{
+    filter:brightness(0%)
+  }
+  99%{
+    filter:brightness(50%)
+  }
+	100% {
+		filter:brightness(100%)
+	}
+}
+
+@keyframes pokeName {
+  0% {
+		opacity:0;
+	}
+  30%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  75%{
+    opacity:0;
+  }
+  90%{
+    opacity:0;
+  }
+  95%{
+    opacity:0;
+  }
+  99%{
+    opacity:0.5;
+  }
+	100% {
+		opacity:1;
+	}
+  
+}
